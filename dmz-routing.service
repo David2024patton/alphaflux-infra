@@ -1,0 +1,12 @@
+[Unit]
+Description=Policy routing for Cradlepoint DMZ replies
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/dmz-routing.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
