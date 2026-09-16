@@ -13,8 +13,7 @@ Three files, and each is small enough to read before running:
 
 The problem this solves: the server is dual homed. Bulk traffic should use the fiber default
 route, but a session that arrived over the static gateway has to reply over it too or the
-connection is never established. See `docs/system-admin.md` in `alphaflux-docs` for the wider
-server picture.
+connection is never established. See the platform overview in `alphaflux-docs` for the wider server picture.
 
 ## Running it
 
